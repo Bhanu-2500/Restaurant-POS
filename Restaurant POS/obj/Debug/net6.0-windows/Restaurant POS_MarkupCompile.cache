@@ -1,0 +1,20 @@
+﻿Restaurant POS
+
+
+winexe
+C#
+.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\
+Restaurant_POS
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\App.xaml
+1051068978
+
+83592264057
+248-4271974
+Views\CategoryWindowView.xaml;Views\DashBoardMenuView.xaml;Views\DetailedInvoiceBillView.xaml;Views\FoodsAndDrinksMenuView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\ProductWindowView.xaml;Views\SettingsMenuView.xaml;Views\ShopView.xaml;Views\UserWindowView.xaml;
+
+False
+

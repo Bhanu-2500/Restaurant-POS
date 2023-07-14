@@ -1,0 +1,301 @@
+﻿<UserControl x:Class="Restaurant_POS.Views.DashBoardMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             Background="Transparent">
+    <UserControl.Resources>
+        <Style x:Key="normal-text" TargetType="TextBox" BasedOn="{StaticResource Custom-TextBoxStyle}">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Width" Value="420"/>
+        </Style>
+        <Style x:Key="label-text" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="0 10 0 8"/>
+            <Setter Property="Foreground" Value="{StaticResource custom-White}"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.IsSharedSizeScope="True" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+                <RowDefinition Height ="Auto"/>
+            </Grid.RowDefinitions>
+            <!--#region Topic -->
+            <TextBlock Text="Personal Details" FontSize="42" 
+                       FontWeight="Medium" Foreground="{StaticResource custom-White}"
+                       HorizontalAlignment="Center"
+                       Margin="0 40 0 0"/>
+            <!--#endregion-->
+            <StackPanel Grid.Row="1"
+                        Margin="0 40 0 0">
+                <!--#region Profile-Picture -->
+                <Border BorderBrush="{StaticResource custom-White}" BorderThickness="2" CornerRadius="112" Width="224" Height="224" Margin="0 10 0 20">
+                    <Border Height="200" CornerRadius="100" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border.Background>
+                            <ImageBrush ImageSource="{Binding CurrentUser.ImagePath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </Border.Background>
+                    </Border>
+                </Border>
+                <!--#endregion-->
+                <!--#region Image-Browse-Button -->
+                <Button Command="{Binding UserProfilePictureSelectionCommand}" Content="Browse" Tag="Image" Height="35" BorderThickness="2">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource Custom-Button}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="true">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="false">
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--#endregion-->
+            </StackPanel>
+            <!--#region Current-User-Name -->
+            <Grid Grid.Row="2" Margin="40 15 0 20" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Name" Style="{StaticResource label-text}"/>
+                <TextBlock Grid.Column="1" Text="   :  " Style="{StaticResource label-text}"/>
+                <TextBox Grid.Column="2" Text="{Binding CurrentUser.Name}" Style="{StaticResource normal-text}"  IsEnabled="{Binding IsEditable}"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Current-User-Password -->
+            <Grid Grid.Row="3" Margin="40 0 0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Password" Style="{StaticResource label-text}"/>
+                <TextBlock Grid.Column="1" Text="   :   "  Style="{StaticResource label-text}"/>
+                <TextBox Grid.Column="2"  IsEnabled="{Binding IsEditable}">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox" BasedOn="{StaticResource normal-text}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Text" Value="***********"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="True">
+                                    <Setter Property="Text" Value="{Binding CurrentUser.Password}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Current-User-Email -->
+            <Grid Grid.Row="4" Margin="40 0 0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Email" Style="{StaticResource label-text}"/>
+                <TextBlock Grid.Column="1" Text="   :   "  Style="{StaticResource label-text}"/>
+                <TextBox Grid.Column="2" Text="{Binding CurrentUser.Email}" Style="{StaticResource normal-text}"  IsEnabled="{Binding IsEditable}"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Current-User-Contact-Number -->
+            <Grid Grid.Row="5" Margin="40 0 0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Contact No." Style="{StaticResource label-text}"/>
+                <TextBlock Grid.Column="1" Text="   :   "  Style="{StaticResource label-text}"/>
+                <TextBox Grid.Column="2" Text="{Binding CurrentUser.PhoneNumber}" Style="{StaticResource normal-text}"  IsEnabled="{Binding IsEditable}"/>
+            </Grid>
+            <!--#endregion-->
+            <StackPanel Orientation="Horizontal" Grid.Row="6"
+                        Margin="0 30 0 0"
+                        HorizontalAlignment="Center">
+                <!--#region Edit-Button -->
+                <Button  Command="{Binding EditUserDetailsCommand}" Content="Edit" Tag="Edit" Height="35" BorderThickness="2">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource Custom-Button}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="false">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="true">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--#endregion-->
+                <!--#region Save-Button -->
+                <Button Command="{Binding SaveEditedDetailsCommand}" Content="Save" Tag="VerifiedUser" Height="35" BorderThickness="2">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource Custom-Button}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="true">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsEditable}" Value="false">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--#endregion-->
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!--#region NewRegion -->
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Works Hour Details for this Month" FontSize="20"
+                           HorizontalAlignment="Center" 
+                           Margin="0 40 0 10" Foreground="{StaticResource custom-White}" FontWeight="Medium"/>
+                <lvc:CartesianChart Series="{Binding SeriesCollectionForWorkHours}" 
+                           LegendLocation="Right"
+                           Width="600" Height="340"
+                           Background="#D0E8F2">
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis Title="WorkHours" FontSize="12" Foreground="{StaticResource custom-Grey}"  MinValue="0" MaxValue="10"></lvc:Axis>
+                    </lvc:CartesianChart.AxisY>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis  Title="Days of Month" Labels="{Binding XLabels}"
+                                   FontSize="12" Foreground="{StaticResource custom-Grey}" MinValue="0"></lvc:Axis>
+                    </lvc:CartesianChart.AxisX>
+                </lvc:CartesianChart>
+            </StackPanel>
+            <!--#endregion-->
+            <!--#region Sales-Details-Graph -->
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Sales Details for this Month" FontSize="20"
+                           HorizontalAlignment="Center"  Foreground="#EFF5F5" FontWeight="Medium"
+                           Margin="0 20 0 10"/>
+                <lvc:CartesianChart Series="{Binding SeriesCollectionForSales}" 
+                                    LegendLocation="Right" 
+                                    Width="600" Height="340"
+                                    Background="#D0E8F2">
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis Title="Sales"  MinValue="0" FontSize="12" Foreground="{StaticResource custom-Grey}"></lvc:Axis>
+                    </lvc:CartesianChart.AxisY>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis Title="Days of Month" Labels="{Binding XLabels}" FontSize="12" Foreground="{StaticResource custom-Grey}" MinValue="0"></lvc:Axis>
+                    </lvc:CartesianChart.AxisX>
+                </lvc:CartesianChart>
+                <StackPanel.Style>
+                    <Style TargetType="StackPanel">
+                        <Style.Triggers >
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="True">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="false">
+                                <Setter Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Style>
+            </StackPanel>
+            <!--#endregion-->
+            <!--#region User-Details -->
+            <Grid Grid.Row="1" VerticalAlignment="Center" Grid.IsSharedSizeScope="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="60" Width="600" CornerRadius="10" Background="{StaticResource custom-Grey}" Margin="0 0 0 20">
+                    <Grid VerticalAlignment="Center" Margin="30 0 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Last Login" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="1" Text="   :   " Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="2" Text="{Binding CurrentUser.LastLogin}" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="1" Height="60" Width="600" CornerRadius="10" Background="{StaticResource custom-Grey}" Margin="0 0 0 20">
+                    <Grid VerticalAlignment="Center" Margin="30 0 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Woking Time" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="1" Text="   :   " Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="2" Text="{Binding CurrentUser.TotalWorkofTheDay, StringFormat=hh\\:mm\\:ss}" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="2" Height="60" Width="600" CornerRadius="10" Background="{StaticResource custom-Grey}" Margin="0 0 0 20">
+                    <Grid VerticalAlignment="Center" Margin="30 0 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Total Sales" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="1" Text="   :   " Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="2" Text="{Binding InvoiceCount}" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="3" Height="60" Width="600" CornerRadius="10" Background="{StaticResource custom-Grey}" Margin="0 0 0 20">
+                    <Grid VerticalAlignment="Center" Margin="30 0 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Total Sales For Today" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="1" Text="   :   " Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                        <TextBlock Grid.Column="2" Text="{Binding InvoiceCountForToday}" Foreground="{StaticResource custom-White}" FontSize="20" FontWeight="DemiBold"/>
+                    </Grid>
+                </Border>
+                <Grid.Style>
+                    <Style TargetType="Grid">
+                        <Style.Triggers >
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="False">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="True">
+                                <Setter Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Grid.Style>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Shut-Down-Button -->
+            <Button Grid.Row="2" Command="{Binding ShutDownAppCommand}" Margin="0 0 0 20"
+                    Style="{StaticResource Custom-Button}" Content="Shut down" Tag="SettingsPower" Height="35" BorderThickness="2"/>
+            <!--#endregion-->
+        </Grid>
+    </Grid>
+</UserControl>

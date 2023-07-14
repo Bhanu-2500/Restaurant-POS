@@ -1,0 +1,164 @@
+﻿<Window x:Class="Restaurant_POS.Views.ProductWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant_POS.Views"
+        mc:Ignorable="d"
+        Title="ProductWindowView" Height="800" Width="450"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Border Background="{StaticResource custom-Grey}" BorderBrush="{StaticResource custom-White}" BorderThickness="2" CornerRadius="15">
+        <Grid Grid.IsSharedSizeScope="True" Margin="30 5 5 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Foreground="{StaticResource custom-White}" FontSize="24" FontWeight="Medium" Margin="0 20"
+                       TextDecorations="Underline">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsCustomizedMode}" Value="False">
+                                <Setter Property="Text" Value="Add New Product Details"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsCustomizedMode}" Value="True">
+                                <Setter Property="Text" Value="Update Product Details"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <!--#region New-Product-Name -->
+            <Grid Grid.Row="1" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Name" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="2" Text="{Binding NewProduct.Name}" MaxLength="30" FontSize="16" Style="{StaticResource Custom-TextBoxStyle}" Width="250"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Product-Description -->
+            <Grid Grid.Row="2" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Description" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Top"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Top"/>
+                <TextBox Grid.Column="2" Text="{Binding NewProduct.Description}" MaxLength="250" TextWrapping="Wrap" FontSize="16" Style="{StaticResource Custom-TextBoxStyle}" Width="250" Height="200"/>
+
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Product-MentionedPrice -->
+            <Grid Grid.Row="3" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Mentioned Price" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}"/>
+                <TextBox Grid.Column="2" Text="{Binding NewProduct.MentionedPrice}" FontSize="16" Style="{StaticResource Custom-TextBoxStyle}" Width="250"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Product-Discount -->
+            <Grid Grid.Row="4" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Discount(%)" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}"/>
+                <TextBox Grid.Column="2" Text="{Binding NewProduct.Discount}" FontSize="16" Style="{StaticResource Custom-TextBoxStyle}" Width="250"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Product-Category -->
+            <Grid Grid.Row="5" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Category Type" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <ComboBox ItemsSource="{Binding Categories}" Height="40" TextBlock.TextAlignment="Center" SelectedItem="{Binding NewProduct.Category}" Grid.Column="2" Width="200"
+                          SelectedIndex="{Binding SelectedCategoryIndex}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <!--<Border Width="40" Height="40">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding ImagePath}" />
+                                        </Border.Background>
+                                    </Border>-->
+                                    <Image Source="{Binding ImagePath}" Width="40" Height="40"/>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Product-ImagePath -->
+            <Grid Grid.Row="6" Margin=" 0 10 0 30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Image Path" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <Button Grid.Column="3" Command="{Binding AddImageCommand}" CommandParameter="product" Margin="20 0"
+                                Style="{StaticResource Custom-Button}" Content="Image" Tag="Image" Height="31" BorderThickness="1"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Remove-Product-Button -->
+            <Button Grid.Row="7"  Command="{Binding RemoveSelectedProductCommand}" Content="Remove Product" Tag="Remove" 
+                            Style="{DynamicResource Custom-Cancel-Button}" Height="35" BorderThickness="2" Visibility="{Binding RemoveButtonVisibility}"/>
+            <!--#endregion-->
+
+            <StackPanel Grid.Row="8" HorizontalAlignment="Center" Orientation="Horizontal">
+                <!--#region Back-Button -->
+                <Button Command="{Binding CloseProductWindowViewCommand}" Margin="30 40"
+                                Style="{StaticResource Custom-Button}" Content="Cancel" Tag="Close" Height="35" BorderThickness="2"/>
+                <!--#endregion-->
+                <!--#region Save-Button -->
+                <Button Command="{Binding AddNewProductConfirmCommand}" Margin="30 40" Tag="VerifiedUser" Height="35" BorderThickness="2">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource Custom-Button}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsCustomizedMode}" Value="True">
+                                    <Setter Property="Content" Value="Update"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsCustomizedMode}" Value="False">
+                                    <Setter Property="Content" Value="Save"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--#endregion-->
+            </StackPanel>
+        </Grid>
+    </Border>
+
+</Window>

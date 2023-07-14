@@ -1,0 +1,92 @@
+﻿<Window x:Class="Restaurant_POS.Views.CategoryWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="CategoryWindowView" Height="500" Width="450"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border Background="{StaticResource custom-Grey}" BorderBrush="{StaticResource custom-White}" BorderThickness="2" CornerRadius="15" >
+        <Grid Grid.IsSharedSizeScope="True" Margin="20 30 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Foreground="{StaticResource custom-White}" FontSize="24" FontWeight="Medium" Margin="0 20"
+                       TextDecorations="Underline">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsCustomizedMode}" Value="False">
+                                <Setter Property="Text" Value="Add New Category Details"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsCustomizedMode}" Value="True">
+                                <Setter Property="Text" Value="Update Category Details"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <!--#region New-Category-Name -->
+            <Grid Grid.Row="1" Margin=" 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition SharedSizeGroup="C"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Name" Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="3" Style="{StaticResource Custom-TextBoxStyle}" MaxLength="25" Text="{Binding NewCategory.Name}" Width="280" FontSize="16"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region New-Category-Image -->
+            <Grid Grid.Row="2" Margin="0 10 0 40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="B"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Img. Path." Grid.Column="0" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Grid.Column="1" FontSize="16" Foreground="{StaticResource custom-White}" VerticalAlignment="Center"/>
+                <Button Grid.Column="2" Command="{Binding AddImageCommand}" 
+                                Style="{StaticResource Custom-Button}" Content="Browse" Tag="Image" Height="31"/>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Remove-Category-Button -->
+            <Button  Grid.Row="3" Command="{Binding RemoveSelectedCategoryCommand}"  Content="Remove Category" Tag="Remove" 
+                            Style="{DynamicResource Custom-Cancel-Button}" Height="35" BorderThickness="2" Visibility="{Binding RemoveButtonVisibility}"/>
+            <!--#endregion-->
+
+            <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <!--#region Back-Button -->
+                <Button Command="{Binding CloseCategoryWindowViewCommand}" CommandParameter="category" Margin="30 0"
+                                Style="{StaticResource Custom-Button}" Content="Cancel" Tag="Close" Height="31" BorderThickness="1" />
+                <!--#endregion-->
+                <!--#region Save-Button -->
+                <Button Command="{Binding AddNewCategoryConfirmCommand}" CommandParameter="category" Margin="30 30" Tag="VerifiedUser" Height="31" BorderThickness="1">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource Custom-Button}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsCustomizedMode}" Value="True">
+                                    <Setter Property="Content" Value="Update"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsCustomizedMode}" Value="False">
+                                    <Setter Property="Content" Value="Save"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--#endregion-->
+            </StackPanel>
+        </Grid>
+    </Border>
+
+</Window>

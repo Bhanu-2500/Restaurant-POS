@@ -1,0 +1,250 @@
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.AssemblyReference.cache
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS_MarkupCompile.cache
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS_MarkupCompile.lref
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.exe
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.deps.json
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.runtimeconfig.json
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.pdb
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\browser-wasm\nativeassets\net6.0\e_sqlite3.a
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.g.resources
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.AssemblyInfoInputs.cache
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.AssemblyInfo.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.CoreCompileInputs.cache
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.CopyComplete
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\refint\Restaurant POS.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.pdb
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.genruntimeconfig.cache
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\ref\Restaurant POS.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ShopView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\LoginView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ShopView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\App.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\FoodsAndDrinksMenuView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\FoodsAndDrinksMenuView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DashBoardMenuView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DashBoardMenuView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\SettingsMenuView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\SettingsMenuView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DetailedInvoiceBillView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DetailedInvoiceBillView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\UserWindowView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\UserWindowView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\CategoryWindowView.baml
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\CategoryWindowView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ProductWindowView.g.cs
+C:\Users\bhanu\Desktop\New folder (4)\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ProductWindowView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.exe
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.deps.json
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.runtimeconfig.json
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Restaurant POS.pdb
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\browser-wasm\nativeassets\net6.0\e_sqlite3.a
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.AssemblyReference.cache
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\CategoryWindowView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DashBoardMenuView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DetailedInvoiceBillView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\FoodsAndDrinksMenuView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\LoginView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ShopView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\UserWindowView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\CategoryWindowView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DashBoardMenuView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\DetailedInvoiceBillView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\FoodsAndDrinksMenuView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ProductWindowView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\SettingsMenuView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ShopView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\UserWindowView.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS_MarkupCompile.cache
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS_MarkupCompile.lref
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\App.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\ProductWindowView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Views\SettingsMenuView.baml
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.g.resources
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.AssemblyInfoInputs.cache
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.AssemblyInfo.cs
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.CoreCompileInputs.cache
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.csproj.CopyComplete
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\refint\Restaurant POS.dll
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.pdb
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\Restaurant POS.genruntimeconfig.cache
+C:\Users\bhanu\Desktop\Restaurant POS\Restaurant POS\obj\Debug\net6.0-windows\ref\Restaurant POS.dll

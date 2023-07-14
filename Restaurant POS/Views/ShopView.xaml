@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="Restaurant_POS.Views.ShopView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks">
+    <UserControl.Resources>
+        <Style x:Key="logo-text-style" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="{StaticResource custom-White}"/>
+            <Setter Property="Text" Value="Cafe"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="10 0 0 0"/>
+            <Setter Property="Padding" Value="10 0 0 10"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+        </Style>
+        <Style x:Key="navigation-button" TargetType="{x:Type RadioButton}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0 0 0 15"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RadioButton}">
+                        <Border x:Name="radioButtonBorder" Height="50" Width="230" CornerRadius="25">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Icon:PackIconMaterial x:Name="btnimg" Kind="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type RadioButton}},Path=Tag,Mode=OneWay}" Width="30" Height="30" Margin="20 0 0 0"/>
+                                <TextBlock x:Name="btntext" Text="{TemplateBinding Property=Content}" FontSize="20" FontWeight="Medium" Margin="30 0 0 0"/>
+                            </StackPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="radioButtonBorder" Value="{StaticResource custom-White}"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="False">
+                                <Setter Property="Background" TargetName="radioButtonBorder" Value="{StaticResource custom-Grey}"/>
+                                <Setter Property="Foreground" TargetName="btntext" Value="{StaticResource custom-White}"/>
+                                <Setter Property="Foreground" TargetName="btnimg" Value="{StaticResource custom-White}"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Foreground" TargetName="btntext" Value="#000000"/>
+                                <Setter Property="Foreground" TargetName="btnimg" Value="#000000"/>
+                                <Setter Property="Background" TargetName="radioButtonBorder" Value="{StaticResource custom-Yellow}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0 20 0 0" >
+            <!--#region Cafe-Logo-&-Title -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Icon:PackIconMaterial Kind="Food" Width="70" Height="70" Foreground="{StaticResource custom-White}"
+                                           Margin="40 10 0 0" VerticalAlignment="Center"/>
+                <TextBlock Style="{StaticResource logo-text-style}"/>
+            </StackPanel>
+            <!--#endregion-->
+            <Separator Margin="25" Background="{StaticResource custom-White}" Height="1"/>
+            <Border CornerRadius="20" Background="{StaticResource custom-Grey}" Margin="10  40 10 50"
+                        HorizontalAlignment="Center" Height="200">
+                    <StackPanel Width="200">
+                    <Grid Grid.IsSharedSizeScope="True">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <!--#region User-Profile-Picture -->
+                        <Border Grid.Row="0" Background="{StaticResource custom-White}" Width="100" Height="100" CornerRadius="50" Margin="0 -40 0 0">
+                            <Border Width="90" Height="90" CornerRadius="50">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="{Binding CurrentUser.ImagePath}"/>
+                                </Border.Background>
+                            </Border>
+                        </Border>
+                        <!--#endregion-->
+                        <!--#region logged-user-name -->
+                        <TextBlock Grid.Row="1" Text="{Binding CurrentUser.Name}" 
+                                   Foreground="{StaticResource custom-White}" FontSize="22" FontWeight="SemiBold" 
+                                   HorizontalAlignment="Center" MaxWidth="150"/>
+                        <!--#endregion-->
+                        <!--#region logged-user-ID -->
+                        <Grid Grid.Row="2" HorizontalAlignment="Left" Margin="20 0 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="A"/>
+                                <ColumnDefinition SharedSizeGroup="B"/>
+                                <ColumnDefinition SharedSizeGroup="C"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="User ID" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold"/>
+                            <TextBlock Text="   :   " Grid.Column="1" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold" />
+                            <TextBlock Grid.Column="2" Text="{Binding CurrentUser.Id}" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold" MaxWidth="150"/>
+                        </Grid>
+                        <!--#endregion-->
+                        <!--#region logged-user-Lastlogin -->
+                        <Grid Grid.Row="3" HorizontalAlignment="Left" Margin="20 0 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="A"/>
+                                <ColumnDefinition SharedSizeGroup="B"/>
+                                <ColumnDefinition SharedSizeGroup="C"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Last Login" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold"/>
+                            <TextBlock Text="   :   " Grid.Column="1" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold" />
+                            <TextBlock Grid.Column="2" Text="{Binding CurrentUser.LastLogin, StringFormat={}{0:hh:mm:ss:tt}}" Foreground="{StaticResource custom-White}" FontSize="14" FontWeight="SemiBold" MaxWidth="150"/>
+                        </Grid>
+                        <!--#endregion-->
+                        <!--#region Logout-button -->
+                        <Button Grid.Row="4" Command="{Binding LogoutCommand}">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Margin" Value="0 20 0 0"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border x:Name="btnBackground"
+                                                        CornerRadius="20"
+                                                        HorizontalAlignment="Center"
+                                                        Height="35">
+                                                    <StackPanel Orientation="Horizontal" 
+                                                        HorizontalAlignment="Center" 
+                                                        VerticalAlignment="Center"
+                                                        Margin="15 0 15 0">
+                                                        <Icon:PackIconMaterial Kind="Logout" x:Name="btnimg"
+                                                                       VerticalAlignment="Center"
+                                                                       Margin="0 0 10 0"/>
+                                                        <TextBlock Text="Logout" x:Name="btntext" 
+                                                           FontSize="14"
+                                                           FontWeight="Bold" 
+                                                           VerticalAlignment="Center"/>
+                                                    </StackPanel>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" TargetName="btnBackground" Value="{StaticResource custom-White}"/>
+                                                        <Setter Property="Cursor" Value="Hand"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsMouseCaptured" Value="True">
+                                                        <Setter Property="Background" TargetName="btnBackground" Value="{StaticResource custom-White}"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsMouseOver" Value="False">
+                                                        <Setter Property="Background" TargetName="btnBackground" Value="{StaticResource custom-Grey}"/>
+                                                        <Setter Property="BorderBrush" TargetName="btnBackground" Value="{StaticResource custom-White}"/>
+                                                        <Setter Property="BorderThickness" TargetName="btnBackground" Value="2"/>
+                                                        <Setter Property="Foreground" TargetName="btntext" Value="{StaticResource custom-White}"/>
+                                                        <Setter Property="Foreground" TargetName="btnimg" Value="{StaticResource custom-White}"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Foreground" TargetName="btntext" Value="{StaticResource custom-Grey}"/>
+                                                        <Setter Property="Foreground" TargetName="btnimg" Value="{StaticResource custom-Grey}"/>
+                                                        <Setter Property="Background" TargetName="btnBackground" Value="{StaticResource custom-Yellow}"/>
+                                                        <Setter Property="Cursor" Value="Hand"/>
+                                                    </Trigger>
+
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <!--#endregion-->
+                    </Grid>
+                </StackPanel>
+            </Border>
+            <!--#region Dashboard-view-navigation-button -->
+            <RadioButton Command="{Binding DashBoardViewCommand}" Style="{StaticResource navigation-button}" Content="Dash Board" Tag="MonitorDashboard"/>
+            <!--#endregion-->
+            <!--#region Product-view-navigation-button -->
+            <RadioButton Command="{Binding ProductsViewCommand}" IsChecked="True" HorizontalAlignment="Center" Content="Foods | Drinks" Tag="FoodForkDrink" Style="{StaticResource navigation-button}"/>
+            <!--#endregion-->
+            <!--#region Detailed-Invoices-Bill-button -->
+            <RadioButton Command="{Binding BillingListViewCommand}" Style="{StaticResource navigation-button}" Content="Invoices" Tag="Receipt"/>
+            <!--#endregion-->
+            <!--#region Setting-view-navigation-button -->
+            <RadioButton Command="{Binding SettingsViewCommand}" Tag="ViewHeadline" Content="Settings">
+                <RadioButton.Style>
+                    <Style TargetType="RadioButton"  BasedOn="{StaticResource navigation-button}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="True">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding CurrentUser.IsAdmin}" Value="False">
+                                <Setter Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RadioButton.Style>
+            </RadioButton>
+            <!--#endregion-->
+        </StackPanel>
+        <Border Grid.Column="1" Margin="0 30 0 30" Width="2" Background="{StaticResource custom-White}" VerticalAlignment="Stretch" CornerRadius="3"/>
+        <ContentControl  Grid.Column="2" Content="{Binding SelectedMenuItemView}"/>
+    </Grid>
+</UserControl>

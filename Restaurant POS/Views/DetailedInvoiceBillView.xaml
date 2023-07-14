@@ -1,0 +1,285 @@
+﻿<UserControl x:Class="Restaurant_POS.Views.DetailedInvoiceBillView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="ListView">
+            <Setter Property="Foreground" Value="{StaticResource custom-White}"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource custom-White}"/>
+        </Style>
+        <Style x:Key="normalText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource custom-White}"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <!--#region Title -->
+                <TextBlock Text="Invoicebill Details" HorizontalAlignment="Left" Margin="300 20 0 20" FontSize="48"/>
+                <!--#endregion-->
+                <StackPanel Orientation="Horizontal" Margin="20 0 0 20">
+                    <!--#region Invoice-ID-Searchbar -->
+                    <TextBlock Text="Invoice Id   :   " FontSize="18" VerticalAlignment="Center"/>
+                    <TextBox Text="{Binding SearchId,UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource Custom-TextBoxStyle}"
+                             FontSize="18" Width="200"/>
+                    <!--#endregion-->
+                    <!--#region Reset-button -->
+                    <Button Margin="40 0 40 0" Command="{Binding ClearSearchCommand}" Content="Clear" Tag="ClearAll" 
+                            Style="{StaticResource Custom-Button}" Height="35" BorderThickness="2"/>
+                    <!--#endregion-->
+                    <!--#region Date-Picker -->
+                    <DatePicker SelectedDate="{Binding FillteredDate, UpdateSourceTrigger=PropertyChanged}" 
+                        VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                        TextBlock.FontSize="18" TextBlock.Foreground="Transparent"
+                        Background="Transparent" Foreground="{StaticResource custom-Grey}" BorderBrush="{StaticResource custom-White}" />
+                    <!--#endregion-->
+                    <!--#region No item found message -->
+                    <TextBlock Text="No item found!" VerticalAlignment="Center" FontSize="18" Margin="20 0 0 0" FontWeight="Medium" Visibility="{Binding NoItemFoundTextVisibility}"/>
+                    <!--#endregion-->
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+                <Grid Grid.IsSharedSizeScope="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <!--#region Available-Invoice-Count -->
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Invoice Count" Style="{StaticResource normalText}" />
+                        <TextBlock Text="   :   " Grid.Column="1" Style="{StaticResource normalText}" />
+                        <TextBlock Text="{Binding InvoiceCount}" Style="{StaticResource normalText}"  Grid.Column="2"/>
+                    </Grid>
+                    <!--#endregion-->
+                    <!--#region Total-Sales -->
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A"/>
+                            <ColumnDefinition SharedSizeGroup="B"/>
+                            <ColumnDefinition SharedSizeGroup="C"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Total Sales" Style="{StaticResource normalText}" />
+                        <TextBlock Text="   :   " Grid.Column="1" Style="{StaticResource normalText}" />
+                        <TextBlock Text="{Binding TotalSales, StringFormat={}Rs: {0:N2}}" Grid.Column="2" Style="{StaticResource normalText}" />
+                    </Grid>
+                    <!--#endregion-->
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="1" BorderBrush="{StaticResource custom-White}" BorderThickness="0 2 0 0" Margin="5">
+            <ListView ItemsSource="{Binding FillteredInvoiceBills}" Background="Transparent" BorderThickness="0" Margin="0 20 0 0">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <Border BorderBrush="{StaticResource custom-White}" BorderThickness="2" CornerRadius="10" Margin="0 0 0 10">
+                                        <Grid Margin="0 10 0 20">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="300"/>
+                                                <ColumnDefinition Width="300"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Grid.IsSharedSizeScope="True">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition SharedSizeGroup="A"/>
+                                                        <ColumnDefinition SharedSizeGroup="B"/>
+                                                        <ColumnDefinition SharedSizeGroup="C"/>
+                                                        <ColumnDefinition SharedSizeGroup="D"/>
+                                                        <ColumnDefinition SharedSizeGroup="E"/>
+                                                        <ColumnDefinition SharedSizeGroup="F"/>
+                                                        <ColumnDefinition SharedSizeGroup="G"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock Grid.Column="0" Text="Id" Margin="10 0 "/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="1" Text="Name"/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="2" Text="SellingPrice"/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="3" Text="DiscountPrice"/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="4" Text="Amount"/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="5" Text="SubTotal"/>
+                                                    <TextBlock Margin="10 0 " Grid.Column="6" Text="TotalDiscount"/>
+                                                </Grid>
+                                                <Separator Margin="10 5 10 0" Background="{StaticResource custom-White}"/>
+                                                <ListView ItemsSource="{Binding OrderList}" Background="Transparent" BorderThickness="0" Margin="0 10 ">
+                                                    <ListView.ItemContainerStyle>
+                                                        <Style TargetType="ListViewItem">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate>
+                                                                        <Grid>
+                                                                            <Grid.ColumnDefinitions>
+                                                                                <ColumnDefinition SharedSizeGroup="A"/>
+                                                                                <ColumnDefinition SharedSizeGroup="B"/>
+                                                                                <ColumnDefinition SharedSizeGroup="C"/>
+                                                                                <ColumnDefinition SharedSizeGroup="D"/>
+                                                                                <ColumnDefinition SharedSizeGroup="E"/>
+                                                                                <ColumnDefinition SharedSizeGroup="F"/>
+                                                                                <ColumnDefinition SharedSizeGroup="G"/>
+                                                                            </Grid.ColumnDefinitions>
+                                                                            <!--#region Product-Details -->
+                                                                            <TextBlock Grid.Column="0"  Text="{Binding Product.Id, StringFormat={}{0}.}" HorizontalAlignment="Center"/>
+                                                                            <TextBlock Grid.Column="1" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding Product.Name}"/>
+                                                                            <TextBlock Grid.Column="2" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding Product.SellingPrice, StringFormat={}Rs. {0:N2}}"/>
+                                                                            <TextBlock Grid.Column="3" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding Product.DiscountPrice, StringFormat={}Rs. {0:N2}}"/>
+                                                                            <TextBlock Grid.Column="4" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding Amount, StringFormat={}x{0}}"/>
+                                                                            <TextBlock Grid.Column="5" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding SubTotal, StringFormat={}Rs. {0:N2}}"/>
+                                                                            <TextBlock Grid.Column="6" Margin="10 0 0 0" HorizontalAlignment="Left" Text="{Binding TotalDiscount, StringFormat={}Rs. {0:N2}}"/>
+                                                                            <!--#endregion-->
+                                                                        </Grid>
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </ListView.ItemContainerStyle>
+                                                </ListView>
+                                            </StackPanel>
+                                            <Border Grid.Column="1">
+                                                <Grid Grid.IsSharedSizeScope="True" VerticalAlignment="Top">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--#region Invoice Id -->
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Invoice Id"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding InvoiceId}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region Date-Time -->
+                                                    <Grid Grid.Row="1">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Date and Time"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding DateTime}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region User-ID -->
+                                                    <Grid Grid.Row="2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Cashier Id"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding User.Id}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region User-Name -->
+                                                    <Grid Grid.Row="3">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Cashier"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding User.Name}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                </Grid>
+                                            </Border>
+                                            <Border Grid.Column="2" Margin="20 0 ">
+                                                <Grid Grid.IsSharedSizeScope="True" VerticalAlignment="Top">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--#region Sub-Total -->
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Sub Total"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding SubTotal, StringFormat={}Rs. {0:N2}}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region Total-Discount -->
+                                                    <Grid Grid.Row="1">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Total Discount"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding TotalDiscount, StringFormat={}Rs. {0:N2}}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region Cash -->
+                                                    <Grid Grid.Row="2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Cash"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding Cash, StringFormat={}Rs. {0:N2}}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                    <!--#region Balance -->
+                                                    <Grid Grid.Row="3">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition SharedSizeGroup="A"/>
+                                                            <ColumnDefinition SharedSizeGroup="B"/>
+                                                            <ColumnDefinition SharedSizeGroup="C"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="Balance"/>
+                                                        <TextBlock Text="   :   " Grid.Column="1"/>
+                                                        <TextBlock Text="{Binding Balance, StringFormat={}Rs. {0:N2}}" Grid.Column="2"/>
+                                                    </Grid>
+                                                    <!--#endregion-->
+                                                </Grid>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+        </Border>
+    </Grid>
+</UserControl>

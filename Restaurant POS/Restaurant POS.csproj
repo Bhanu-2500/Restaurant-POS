@@ -1,0 +1,156 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Restaurant_POS</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+    <Page Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\FontdinerdotcomHuggable.ttf" />
+    <None Remove="Resources\Images\admin-user" />
+    <None Remove="Resources\Images\all.png" />
+    <None Remove="Resources\Images\burger.jpg" />
+    <None Remove="Resources\Images\coffee-cup.png" />
+    <None Remove="Resources\Images\customer-support.png" />
+    <None Remove="Resources\Images\donut.png" />
+    <None Remove="Resources\Images\download %281%29.jpg" />
+    <None Remove="Resources\Images\download %2810%29.jpg" />
+    <None Remove="Resources\Images\download %282%29.jpg" />
+    <None Remove="Resources\Images\download %283%29.jpg" />
+    <None Remove="Resources\Images\download %284%29.jpg" />
+    <None Remove="Resources\Images\download %285%29.jpg" />
+    <None Remove="Resources\Images\download %286%29.jpg" />
+    <None Remove="Resources\Images\download %287%29.jpg" />
+    <None Remove="Resources\Images\download %288%29.jpg" />
+    <None Remove="Resources\Images\download %289%29.jpg" />
+    <None Remove="Resources\Images\download.jpg" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search.html" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\192px.svg" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\app.html" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\cb=gapi.loaded_0" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\dark_thumbnail2.png" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\device_default_thumbnail2.png" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%281%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2810%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2811%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2812%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2813%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2814%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2815%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2816%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2817%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%2818%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%282%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%283%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%284%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%285%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%286%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%287%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%288%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\images%289%29" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\light_thumbnail2.png" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\m=hfcr" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\m=_b,_tp,_r" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\RotateCookiesPage.html" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\rs=AA2YrTtZfjovVF0JY0t3i8hxL1Mve9zkHA" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\rs=AA2YrTuabW3AjZAPvya81hKVEvtgQtmuDA" />
+    <None Remove="Resources\Images\grilled chicken sandwich - Google Search_files\unnamed.png" />
+    <None Remove="Resources\Images\hamburger.png" />
+    <None Remove="Resources\Images\ice-cream.png" />
+    <None Remove="Resources\Images\images %281%29.jpg" />
+    <None Remove="Resources\Images\images.jpg" />
+    <None Remove="Resources\Images\login-page-background.jpg" />
+    <None Remove="Resources\Images\menu.png" />
+    <None Remove="Resources\Images\profile_user.jpg" />
+    <None Remove="Resources\Images\sandwich.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\FontdinerdotcomHuggable.ttf" />
+    <Resource Include="Resources\Images\admin-user" />
+    <Resource Include="Resources\Images\all.png" />
+    <Resource Include="Resources\Images\burger.jpg" />
+    <Resource Include="Resources\Images\coffee-cup.png" />
+    <Resource Include="Resources\Images\customer-support.png" />
+    <Resource Include="Resources\Images\donut.png" />
+    <Resource Include="Resources\Images\download (1).jpg" />
+    <Resource Include="Resources\Images\download (10).jpg" />
+    <Resource Include="Resources\Images\download (2).jpg" />
+    <Resource Include="Resources\Images\download (3).jpg" />
+    <Resource Include="Resources\Images\download (4).jpg" />
+    <Resource Include="Resources\Images\download (5).jpg" />
+    <Resource Include="Resources\Images\download (6).jpg" />
+    <Resource Include="Resources\Images\download (7).jpg" />
+    <Resource Include="Resources\Images\download (8).jpg" />
+    <Resource Include="Resources\Images\download (9).jpg" />
+    <Resource Include="Resources\Images\download.jpg" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search.html" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\192px.svg" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\app.html" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\cb=gapi.loaded_0" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\dark_thumbnail2.png" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\device_default_thumbnail2.png" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(1)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(10)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(11)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(12)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(13)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(14)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(15)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(16)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(17)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(18)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(2)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(3)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(4)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(5)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(6)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(7)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(8)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\images(9)" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\light_thumbnail2.png" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\m=hfcr" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\m=_b,_tp,_r" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\RotateCookiesPage.html" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\rs=AA2YrTtZfjovVF0JY0t3i8hxL1Mve9zkHA" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\rs=AA2YrTuabW3AjZAPvya81hKVEvtgQtmuDA" />
+    <Resource Include="Resources\Images\grilled chicken sandwich - Google Search_files\unnamed.png" />
+    <Resource Include="Resources\Images\hamburger.png" />
+    <Resource Include="Resources\Images\ice-cream.png" />
+    <Resource Include="Resources\Images\images (1).jpg" />
+    <Resource Include="Resources\Images\images.jpg" />
+    <Resource Include="Resources\Images\login-page-background.jpg" />
+    <Resource Include="Resources\Images\menu.png" />
+    <Resource Include="Resources\Images\profile_user.jpg" />
+    <Resource Include="Resources\Images\sandwich.png" />
+  </ItemGroup>
+
+</Project>
